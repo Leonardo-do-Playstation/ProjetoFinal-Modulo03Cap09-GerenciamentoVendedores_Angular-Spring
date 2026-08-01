@@ -105,7 +105,7 @@ public class Seller {
         @Override
         public String toString() {
             return "Seller [id=" + id + ", name=" + name + ", gender=" + gender + ", salary=" + salary
-                    + ", bonusPercentage=" + bonusPercentage + "]";
+                    + ", bonusPercentage=" + bonusPercentage  + "%" + "]";
         }
 
         
