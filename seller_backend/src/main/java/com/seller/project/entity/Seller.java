@@ -1,4 +1,6 @@
-package com.seller.project.entities;
+package com.seller.project.entity;
+
+import com.seller.project.dtos.SellerResponse;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -39,6 +41,10 @@ public class Seller {
             this.gender = gender;
             this.salary = salary;
             this.bonusPercentage = bonusPercentage;
+        }
+
+        public void setId(Long id) {
+            this.id = id;
         }
 
         public Long getId() {
@@ -108,5 +114,17 @@ public class Seller {
                     + ", bonusPercentage=" + bonusPercentage  + "%" + "]";
         }
 
+
+        public SellerResponse toDto(){
+            SellerResponse sellerResponse = new SellerResponse();
+            
+            sellerResponse.setId(id);
+            sellerResponse.setName(name);
+            sellerResponse.setGender(gender);
+            sellerResponse.setSalary(salary);
+            sellerResponse.setBonusPercentage(bonusPercentage);
+
+            return sellerResponse;
+        }
         
 }

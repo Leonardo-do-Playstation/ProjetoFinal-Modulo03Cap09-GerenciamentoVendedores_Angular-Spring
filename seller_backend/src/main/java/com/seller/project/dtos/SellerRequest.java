@@ -1,6 +1,6 @@
 package com.seller.project.dtos;
 
-import com.seller.project.entities.Seller;
+import com.seller.project.entity.Seller;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Positive;

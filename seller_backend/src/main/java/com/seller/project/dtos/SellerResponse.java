@@ -1,6 +1,6 @@
 package com.seller.project.dtos;
 
-public abstract class SellerResponse {
+public class SellerResponse {
     
     private Long id;
 
